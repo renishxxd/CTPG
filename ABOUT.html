@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Clothing Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function showMessage() {
+      alert("Thank you for contacting us!");
+    }
+  </script>
+</head>
+<body class="bg-gray-100">
+
+<!-- Navigation -->
+<nav class="bg-gray-900 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold">Clothing Store</a>
+    <ul class="flex space-x-4">
+      <li><a href="C:\Users\renis\src\index.html" class="hover:text-gray-300">Home</a></li>
+      <li><a href="C:\Users\renis\src\CONTACT.html" class="hover:text-gray-300">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="py-16">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+    <div class="w-full md:w-1/2">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Our Store</h2>
+      <p class="text-lg mb-6">At Clothing Store, we strive to offer the latest fashion trends with top-notch quality.</p>
+      <p class="text-lg mb-6">Our collection includes a wide range of clothing for all styles and occasions.</p>
+      <p class="text-lg mb-6">Visit us today and explore the world of fashion!</p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img src="https://www.shippit.com/wp-content/uploads/Unorganized/photo-1604467794349-0b74285de7e7.jpg" alt="Store Image" class="rounded-lg shadow-lg">
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-900 text-white py-16">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+    <div class="w-full md:w-1/2">
+      <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+      <!-- Form -->
+      <form action="#" onsubmit="showMessage(); return false;" class="flex flex-col">
+        <input type="text" placeholder="Your Name" class="bg-gray-800 text-white rounded-md py-2 px-4 mb-4">
+        <input type="email" placeholder="Your Email" class="bg-gray-800 text-white rounded-md py-2 px-4 mb-4">
+        <textarea placeholder="Your Message" rows="4" class="bg-gray-800 text-white rounded-md py-2 px-4 mb-4"></textarea>
+        <button type="submit" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded cursor-pointer">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white text-center py-4">
+  <p>&copy; 2023 Clothing Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heart Emoji Pop-up Animation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes popUp {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .heart-emoji {
+            font-size: 24px;
+            animation: popUp 0.5s ease-in-out;
+            display: inline-block;
+            transform-origin: center;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="max-w-md bg-white shadow-md rounded-md overflow-hidden p-8 text-center">
+        <h2 class="text-3xl font-bold mb-4">Thank You for Your Love!</h2>
+        <p class="text-gray-600">Your support means everything to us.</p>
+        <div class="mt-6">
+            <span class="heart-emoji">❤️</span>
+            <span class="heart-emoji">🧡</span>
+            <span class="heart-emoji">💛</span>
+            <span class="heart-emoji">💚</span>
+            <span class="heart-emoji">💙</span>
+            <span class="heart-emoji">💜</span>
+        </div>
+    </div>
+</body>
+
+</html>

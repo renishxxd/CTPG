@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Tailwind CSS Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<div class="header bg-gray-300 p-4">
+
+  <div class="header-right">
+    <a href="C:\Users\renis\src\index.html">Home</a>
+    
+    <a href="C:\Users\renis\src\ABOUT.html">About</a>
+  </div>
+</div>
+
+<div class="container mx-auto p-6">
+  <div class="text-center">
+    <h2 class="text-3xl">Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="flex flex-wrap">
+    <div class="w-full md:w-1/2 py-4">
+      <img src="https://www.stockvault.net/data/2010/12/03/116360/preview16.jpg" class="w-full" alt="Contact Image">
+    </div>
+    <div class="w-full md:w-1/2 py-4">
+      <form action="/action_page.php" class="bg-gray-200 p-6 rounded">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." class="w-full bg-white border border-gray-300 rounded-md py-2 px-4 mb-4">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="w-full bg-white border border-gray-300 rounded-md py-2 px-4 mb-4">
+
+        <label for="country">Country</label>
+        <select id="country" name="country" class="w-full bg-white border border-gray-300 rounded-md py-2 px-4 mb-4">
+          <option value="australia">India</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" class="w-full bg-white border border-gray-300 rounded-md py-2 px-4 mb-4"></textarea>
+        
+        <input type="submit" value="Submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded cursor-pointer">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
